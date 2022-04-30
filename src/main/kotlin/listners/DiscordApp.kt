@@ -13,7 +13,7 @@ import java.awt.Toolkit
 import java.awt.datatransfer.StringSelection
 import java.util.concurrent.Executors
 
-class MyMessageListener(private val otp : String): MessageCreateListener,TyperXView  {
+class DiscordApp(private val otp : String): MessageCreateListener,TyperXView  {
     private val threadPool = Executors.newFixedThreadPool(10)
     private val clipboard = Toolkit.getDefaultToolkit().systemClipboard
     private val typerWorker = TyperXWorker(this)
